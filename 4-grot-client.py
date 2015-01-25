@@ -7,7 +7,7 @@ import logging
 
 log = logging.getLogger('grot-client')
 
-SERVER = 'localhost'
+SERVER = 'php-grot-public-mjaniszew.c9.io'
 
 if __name__ == '__main__':
     token = sys.argv[1]  # your Access Token
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     time.sleep(random.random())
 
     # connect to the game server
-    client = http.client.HTTPConnection(SERVER, 8080)
+    client = http.client.HTTPConnection(SERVER, 80)
     client.connect()
 
     # block until the game starts
